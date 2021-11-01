@@ -9,7 +9,7 @@ in main screen there are 5 things you can do
 
 -click to teams and see live team information automatically uğdates every week after the race
 
--click tp previous champions to see detailed information about every championship on f1 history
+-click to previous champions to see detailed information about every championship vicotrs on f1 history
 
 -click on calendar to see.. calendar
 
