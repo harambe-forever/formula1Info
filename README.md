@@ -2,6 +2,7 @@
 Formula 1 information app 
 .netCORE 3.1
 in main screen there are 5 things you can do
+
 -go to official f1 website
 
 -click to drivers and see live driver information automatically updates every week after the race
