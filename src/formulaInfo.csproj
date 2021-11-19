@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2609CFC-0D67-47E2-9566-32A00A9B2AC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>formulaInfo</RootNamespace>
+    <AssemblyName>formulaInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.38.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.11.38\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calendar.Designer.cs">
+      <DependentUpon>calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="driversForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driversForm.Designer.cs">
+      <DependentUpon>driversForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="standings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="standings.Designer.cs">
+      <DependentUpon>standings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teamsForm.Designer.cs">
+      <DependentUpon>teamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="webBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="webBrowser.Designer.cs">
+      <DependentUpon>webBrowser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="calendar.resx">
+      <DependentUpon>calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driversForm.resx">
+      <DependentUpon>driversForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="standings.resx">
+      <DependentUpon>standings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teamsForm.resx">
+      <DependentUpon>teamsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="webBrowser.resx">
+      <DependentUpon>webBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alfaRomeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alonso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alpine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angryimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aston.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferrari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form2Gradient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form3Bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goatifi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kimi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lando.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mclaren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\michi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perez.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pierre.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redbull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ricc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\russel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sainz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stupid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tauri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vettel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\williams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yuki.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
