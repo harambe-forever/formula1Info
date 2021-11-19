@@ -21,6 +21,6 @@ in main screen there are 5 things you can do
 
 ![resim](https://user-images.githubusercontent.com/71318378/141976175-d500f643-4e6a-4c3d-bf3f-9cf2c1e384c8.png)
 
-![resim](https://user-images.githubusercontent.com/71318378/141976208-94c382f6-6a75-4ba2-b735-19005291825c.png)
+![resim](https://user-images.githubusercontent.com/71318378/142575945-f8dbee84-1060-4c91-bdb5-e4029c358d4e.png)
 
-<img width="599" alt="cal" src="https://user-images.githubusercontent.com/71318378/139688069-95f99cbb-57e3-49ae-98a0-ebb8952f498a.png">
+![resim](https://user-images.githubusercontent.com/71318378/142575991-ed3a9543-c8a8-4db0-bc9d-ebfb6e0d242f.png)
